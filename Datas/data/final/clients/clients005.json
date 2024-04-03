@@ -1,0 +1,531 @@
+[
+    {
+        "nom": "Marquis",
+        "prenom": "Isabelle",
+        "adresse": "1044 avenue du Ruisseau",
+        "ville": "Saint-Jean-sur-Richelieu",
+        "province": "Quebec",
+        "code_postal": "J3A 3M8",
+        "id": 63989,
+        "profession": "Pharmacien",
+        "revenu_annuel": "220000",
+        "actif": "750000",
+        "passif": "40000",
+        "dettes": "200000",
+        "epargne": "350000",
+        "langue": [
+            "Fran\u00e7ais",
+            "Anglais",
+            "Italien"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Jackson",
+        "prenom": "Elizabeth",
+        "adresse": "9838 Maplewood Crescent",
+        "ville": "Sainte-Anne-des-Plaines",
+        "province": "Quebec",
+        "code_postal": "J0N 1H0",
+        "id": 64029,
+        "profession": "Agent immobilier",
+        "revenu_annuel": "150000",
+        "actif": "500000",
+        "passif": "25000",
+        "dettes": "100000",
+        "epargne": "200000",
+        "langue": [
+            "Anglais",
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Davis",
+        "prenom": "Sarah",
+        "adresse": "6596 Pine Avenue",
+        "ville": "Sainte-Julie",
+        "province": "Quebec",
+        "code_postal": "J3E 1M6",
+        "id": 64017,
+        "profession": "M\u00e9decin",
+        "revenu_annuel": "260000",
+        "actif": "850000",
+        "passif": "40000",
+        "dettes": "180000",
+        "epargne": "270000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "B\u00e9rub\u00e9",
+        "prenom": "Isabelle",
+        "adresse": "9168 rue de la Baie",
+        "ville": "Saint-J\u00e9r\u00f4me",
+        "province": "Quebec",
+        "code_postal": "J7Z 1L5",
+        "id": 63973,
+        "profession": "Consultant",
+        "revenu_annuel": "200000",
+        "actif": "650000",
+        "passif": "20000",
+        "dettes": "120000",
+        "epargne": "280000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Giroux",
+        "prenom": "S\u00e9bastien",
+        "adresse": "4154 avenue des \u00c9rables",
+        "ville": "Brossard",
+        "province": "Quebec",
+        "code_postal": "J4X 1B8",
+        "id": 63959,
+        "profession": "Ing\u00e9nieur",
+        "revenu_annuel": "240000",
+        "actif": "800000",
+        "passif": "30000",
+        "dettes": "150000",
+        "epargne": "250000",
+        "langue": [
+            "Fran\u00e7ais",
+            "Anglais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Jones",
+        "prenom": "David",
+        "adresse": "5690 Cedar Street",
+        "ville": "Ch\u00e2teauguay",
+        "province": "Quebec",
+        "code_postal": "J6J 1K2",
+        "id": 64015,
+        "profession": "Enseignante",
+        "revenu_annuel": "80000",
+        "actif": "300000",
+        "passif": "10000",
+        "dettes": "50000",
+        "epargne": "150000",
+        "langue": [
+            "Anglais",
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Laplante",
+        "prenom": "Mario",
+        "adresse": "9586 rue Saint-Hubert",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H2L 3Z1",
+        "id": 63843,
+        "profession": "Ing\u00e9nieur",
+        "revenu_annuel": "180000",
+        "actif": "600000",
+        "passif": "20000",
+        "dettes": "100000",
+        "epargne": "300000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "B\u00e9langer",
+        "prenom": "M\u00e9lissa",
+        "adresse": "8370 boulevard de l'Avenir",
+        "ville": "Laval",
+        "province": "Quebec",
+        "code_postal": "H7N 6J9",
+        "id": 63897,
+        "profession": "Artiste",
+        "revenu_annuel": "280000",
+        "actif": "850000",
+        "passif": "30000",
+        "dettes": "200000",
+        "epargne": "350000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Roy",
+        "prenom": "Pierre",
+        "adresse": "6771 boulevard Ren\u00e9-L\u00e9vesque",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H2Z 1A2",
+        "id": 63813,
+        "profession": "Agent immobilier",
+        "revenu_annuel": "150000",
+        "actif": "500000",
+        "passif": "30000",
+        "dettes": "100000",
+        "epargne": "200000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Girard",
+        "prenom": "Pierre",
+        "adresse": "9675 boulevard de Maisonneuve Ouest",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H3G 1M8",
+        "id": 63835,
+        "profession": "Consultant",
+        "revenu_annuel": "280000",
+        "actif": "850000",
+        "passif": "30000",
+        "dettes": "200000",
+        "epargne": "350000",
+        "langue": [
+            "Fran\u00e7ais",
+            "Anglais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Gauthier",
+        "prenom": "Michel",
+        "adresse": "3199 rue Wellington",
+        "ville": "Ottawa",
+        "province": "Ontario",
+        "code_postal": "K1A 0A6",
+        "id": 63871,
+        "profession": "Professeur",
+        "revenu_annuel": "100000",
+        "actif": "300000",
+        "passif": "30000",
+        "dettes": "50000",
+        "epargne": "150000",
+        "langue": [
+            "English"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Blais",
+        "prenom": "Antoine",
+        "adresse": "3507 rue des Forges",
+        "ville": "Trois-Rivieres",
+        "province": "Quebec",
+        "code_postal": "G9A 4S3",
+        "id": 63867,
+        "profession": "Comptable",
+        "revenu_annuel": "180000",
+        "actif": "600000",
+        "passif": "50000",
+        "dettes": "200000",
+        "epargne": "400000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Patel",
+        "prenom": "Raj",
+        "adresse": "156 rue de la Montagne",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H3G 1Z6",
+        "id": 63917,
+        "profession": "Avocat",
+        "revenu_annuel": "220000",
+        "actif": "750000",
+        "passif": "40000",
+        "dettes": "200000",
+        "epargne": "350000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Tran",
+        "prenom": "Hoang",
+        "adresse": "5761 rue de la Montagne",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H3G 1Z1",
+        "id": 63947,
+        "profession": "Ing\u00e9nieur",
+        "revenu_annuel": "220000",
+        "actif": "750000",
+        "passif": "40000",
+        "dettes": "200000",
+        "epargne": "350000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Martin",
+        "prenom": "Tyler",
+        "adresse": "6449 Cedarwood Lane",
+        "ville": "Lorraine",
+        "province": "Quebec",
+        "code_postal": "J6Z 2A7",
+        "id": 64035,
+        "profession": "Avocat",
+        "revenu_annuel": "180000",
+        "actif": "600000",
+        "passif": "20000",
+        "dettes": "100000",
+        "epargne": "300000",
+        "langue": [
+            "Anglais",
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Bergeron",
+        "prenom": "Marc",
+        "adresse": "653 rue de la Montagne",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H3G 1Z5",
+        "id": 63831,
+        "profession": "Entrepreneur",
+        "revenu_annuel": "250000",
+        "actif": "850000",
+        "passif": "40000",
+        "dettes": "200000",
+        "epargne": "350000",
+        "langue": [
+            "Fran\u00e7ais",
+            "Anglais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Lavoie",
+        "prenom": "Marcelle",
+        "adresse": "4733 rue Peel",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H3A 1W9",
+        "id": 63821,
+        "profession": "Comptable",
+        "revenu_annuel": "180000",
+        "actif": "600000",
+        "passif": "25000",
+        "dettes": "120000",
+        "epargne": "250000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Bertrand",
+        "prenom": "Philippe",
+        "adresse": "7668 boulevard Champlain",
+        "ville": "Quebec",
+        "province": "Quebec",
+        "code_postal": "G1K 4J5",
+        "id": 63861,
+        "profession": "Entrepreneur",
+        "revenu_annuel": "180000",
+        "actif": "600000",
+        "passif": "20000",
+        "dettes": "100000",
+        "epargne": "300000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Roy",
+        "prenom": "Pierre",
+        "adresse": "6771 boulevard Ren\u00e9-L\u00e9vesque",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H2Z 1A2",
+        "id": 63813,
+        "profession": "Directeur marketing",
+        "revenu_annuel": "300000",
+        "actif": "900000",
+        "passif": "50000",
+        "dettes": "250000",
+        "epargne": "400000",
+        "langue": [
+            "Fran\u00e7ais",
+            "Anglais",
+            "Italien"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Das",
+        "prenom": "Amita",
+        "adresse": "5267 rue Saint-Denis",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H2X 3K5",
+        "id": 63955,
+        "profession": "Ing\u00e9nieur",
+        "revenu_annuel": "180000",
+        "actif": "600000",
+        "passif": "50000",
+        "dettes": "200000",
+        "epargne": "400000",
+        "langue": [
+            "Anglais",
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Anderson",
+        "prenom": "Jessica",
+        "adresse": "2422 Cedar Avenue",
+        "ville": "Sainte-Th\u00e9r\u00e8se",
+        "province": "Quebec",
+        "code_postal": "J7E 2A1",
+        "id": 64025,
+        "profession": "Enseignant",
+        "revenu_annuel": "190000",
+        "actif": "650000",
+        "passif": "30000",
+        "dettes": "150000",
+        "epargne": "250000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Gomez",
+        "prenom": "Maria",
+        "adresse": "3069 rue Sherbrooke Ouest",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H3A 1E2",
+        "id": 63925,
+        "profession": "Ing\u00e9nieur",
+        "revenu_annuel": "220000",
+        "actif": "750000",
+        "passif": "40000",
+        "dettes": "200000",
+        "epargne": "350000",
+        "langue": [
+            "Fran\u00e7ais",
+            "Anglais",
+            "Espagnol"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Beaulieu",
+        "prenom": "Annie",
+        "adresse": "6910 rue Crescent",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H3G 2B8",
+        "id": 63837,
+        "profession": "Infirmi\u00e8re",
+        "revenu_annuel": "160000",
+        "actif": "550000",
+        "passif": "30000",
+        "dettes": "150000",
+        "epargne": "250000",
+        "langue": [
+            "Fran\u00e7ais",
+            "Anglais",
+            "Italien"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Gauthier",
+        "prenom": "Ren\u00e9",
+        "adresse": "271 rue de la Gaucheti\u00e8re Ouest",
+        "ville": "Montreal",
+        "province": "Quebec",
+        "code_postal": "H3B 2P8",
+        "id": 63847,
+        "profession": "Entrepreneur",
+        "revenu_annuel": "220000",
+        "actif": "700000",
+        "passif": "30000",
+        "dettes": "150000",
+        "epargne": "250000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Smith",
+        "prenom": "John",
+        "adresse": "5634 Main Street",
+        "ville": "Longueuil",
+        "province": "Quebec",
+        "code_postal": "J4H 1A1",
+        "id": 64007,
+        "profession": "Pharmacien",
+        "revenu_annuel": "200000",
+        "actif": "650000",
+        "passif": "20000",
+        "dettes": "120000",
+        "epargne": "280000",
+        "langue": [
+            "Fran\u00e7ais"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Fournier",
+        "prenom": "S\u00e9bastien",
+        "adresse": "5070 rue Elgin",
+        "ville": "Ottawa",
+        "province": "Ontario",
+        "code_postal": "K1P 5G3",
+        "id": 63875,
+        "profession": "Conseiller financier",
+        "revenu_annuel": "220000",
+        "actif": "700000",
+        "passif": "30000",
+        "dettes": "150000",
+        "epargne": "250000",
+        "langue": [
+            "English"
+        ],
+        "maj": "2023-10-22"
+    },
+    {
+        "nom": "Lee",
+        "prenom": "James",
+        "adresse": "9500 Birchwood Crescent",
+        "ville": "Mascouche",
+        "province": "Quebec",
+        "code_postal": "J7K 2P5",
+        "id": 64051,
+        "profession": "Directeur marketing",
+        "revenu_annuel": "320000",
+        "actif": "950000",
+        "passif": "60000",
+        "dettes": "280000",
+        "epargne": "350000",
+        "langue": [
+            "Fran\u00e7ais",
+            "Anglais"
+        ],
+        "maj": "2023-10-22"
+    }
+]

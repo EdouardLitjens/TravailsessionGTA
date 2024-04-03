@@ -1,0 +1,28 @@
+passif,ville,id,revenu_annuel,province,maj,code_postal,prenom,epargne,langue,actif,nom,adresse,profession,dettes
+30000,Repentigny,64021,200000,Quebec,2023-10-22,J6A 1W3,Ashley,250000,['Français'],700000,Wilson,8296 Spruce Avenue,Pharmacien,150000
+50000,Sainte-Sophie,64049,300000,Quebec,2023-10-22,J5J 2K3,Ava,400000,"['Français', 'Anglais', 'Espagnol']",900000,Lewis,6865 Oakridge Avenue,Directeur marketing,250000
+20000,Saint-Jérôme,63973,90000,Quebec,2023-10-22,J7Z 1L5,Isabelle,200000,['Français'],400000,Bérubé,9168 rue de la Baie,Enseignante,100000
+30000,Montreal,63911,120000,Quebec,2023-10-22,H3B 3B5,Sofia,200000,"['Français', 'Anglais']",400000,Garcia,6042 boulevard René-Lévesque Ouest,Technicien informatique,100000
+20000,Ottawa,63875,180000,Ontario,2023-10-22,K1P 5G3,Sébastien,300000,['English'],600000,Fournier,5070 rue Elgin,Comptable,100000
+40000,Granby,63991,250000,Quebec,2023-10-22,J2G 3Z1,Sébastien,300000,['Français'],800000,Martel,2179 rue de la Montagne,Directeur marketing,200000
+20000,Quebec,63859,180000,Quebec,2023-10-22,G1K 8M3,Émilie,300000,"['Français', 'Anglais']",600000,Lachance,10075 rue du Vieux-Port,Ingénieure,100000
+30000,Rosemère,64033,200000,Quebec,2023-10-22,J7A 1X1,Olivia,250000,"['Français', 'Anglais']",700000,Harris,276 Birchwood Drive,Agent immobilier,150000
+20000,Quebec,63811,200000,Quebec,2023-10-22,G1R 1B8,Marie,280000,['Français'],650000,Gagnon,435 rue Sainte-Catherine,Entrepreneur,120000
+25000,Montreal,63853,150000,Quebec,2023-10-22,H2H 1A7,Lise,200000,"['Français', 'Anglais']",500000,Thibault,6954 boulevard Saint-Joseph,Infirmière,100000
+20000,Montreal,63815,180000,Quebec,2023-10-22,H2J 1Y7,Isabelle,300000,['Anglais'],600000,Côté,6869 avenue du Mont-Royal,Comptable,100000
+20000,Boisbriand,63999,170000,Quebec,2023-10-22,J7G 4J5,Mathieu,300000,"['Français', 'Anglais']",600000,Vaillancourt,10940 rue des Lilas,Consultante,100000
+40000,Sherbrooke,63969,200000,Quebec,2023-10-22,J1H 1W9,Stéphanie,250000,"['Français', 'Anglais']",700000,Bernier,4071 avenue des Pins,Agent immobilier,150000
+20000,Laval,63889,210000,Quebec,2023-10-22,H7G 4J6,Sophie,250000,"['Français', 'Anglais']",680000,Gagné,4760 rue King Est,Pharmacien,130000
+20000,Sherbrooke,63885,180000,Quebec,2023-10-22,J1H 1T9,Catherine,300000,['Français'],600000,Leblanc,6143 rue Alexandre,Ingénieure,100000
+30000,Montreal,63939,200000,Quebec,2023-10-22,H3G 1L8,Wei,250000,"['Français', 'Anglais', 'Italien']",700000,Wang,2672 rue Sherbrooke Ouest,Infirmière,150000
+50000,Montreal,63857,180000,Quebec,2023-10-22,H2H 2N8,Diane,400000,"['Anglais', 'Français']",600000,Lévesque,2373 avenue Laurier Est,Ingénieur,200000
+40000,Sherbrooke,63887,250000,Quebec,2023-10-22,J1K 2W4,Mathieu,300000,['Français'],800000,Dubois,5590 rue Wellington Nord,Avocat,200000
+25000,Mirabel,64045,150000,Quebec,2023-10-22,J7J 1H9,Madison,200000,"['Anglais', 'Français']",500000,Clark,4992 Pinecrest Boulevard,Comptable,100000
+30000,Montreal,63909,190000,Quebec,2023-10-22,H2X 2V5,Ahmed,270000,"['Français', 'Anglais']",620000,Ali,10149 avenue Saint-Laurent,Médecin,120000
+40000,Vaudreuil-Dorion,63983,220000,Quebec,2023-10-22,J7V 1M8,Pierre,350000,"['Français', 'Anglais', 'Espagnol']",750000,Langlois,8013 boulevard de la Rivière,Pharmacien,200000
+50000,Ottawa,63873,250000,Ontario,2023-10-22,K1S 3V5,Caroline,400000,['English'],800000,Gosselin,5467 rue Bank,Ingénieur,200000
+20000,Saint-Lambert,64013,80000,Quebec,2023-10-22,J4P 1Y7,Jessica,150000,['Français'],300000,Williams,8577 Oak Avenue,Technicien informatique,60000
+30000,Montreal,63809,210000,Quebec,2023-10-22,H1A 1A1,Jean,250000,['Français'],700000,Tremblay,3329 rue Principale,Pharmacien,150000
+20000,Candiac,64001,180000,Quebec,2023-10-22,J5R 1A7,Valérie,280000,"['Français', 'Anglais', 'Espagnol']",600000,Vézina,2839 boulevard de la Colline,Avocat,120000
+20000,Montreal,63931,120000,Quebec,2023-10-22,H3A 3E9,Youssef,150000,"['Français', 'Anglais']",400000,Abdullah,9516 boulevard de Maisonneuve Ouest,Journaliste,100000
+30000,Longueuil,63877,220000,Quebec,2023-10-22,J4V 2M1,Isabelle,250000,"['Anglais', 'Français']",750000,Poirier,1862 avenue Churchill,Pharmacien,150000

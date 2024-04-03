@@ -1,0 +1,41 @@
+[
+  {
+    "uid": "1A2B",
+    "nom": "Tremblay",
+    "prenom": "Sophie",
+    "age": 40,
+    "genre": "Femme",
+    "ville": "Montréal",
+    "province": "QC",
+    "experience": "15 ans",
+    "formation": ["Baccalauréat en finance", "Certification CFA"],
+    "specialite": ["Investissements", "Planification financière"],
+    "langues": ["Français", "Anglais"]
+  },
+  {
+   "uid": "F0E1",
+   "nom": "Smith",
+    "prenom": "John",
+    "age": 35,
+    "genre": "Homme",
+    "ville": "Toronto",
+    "province": "ON",
+    "experience": "10 ans",
+    "formation": ["Bachelor's Degree in Economics", "Certified Financial Planner (CFP)"],
+    "specialite": ["Gestion de patrimoine", "Planification de retraite"],
+    "langues": ["Anglais", "Espagnol"]
+  },
+  {
+    "uid": "3C4D",
+    "nom": "Nguyen",
+    "prenom": "Linh",
+    "age": 38,
+    "genre": "Femme",
+    "ville": "Longueuil",
+    "province": "QC",
+    "experience": "12 ans",
+    "formation": ["Diplôme en finance", "Certification CIM"],
+    "specialite": ["Gestion de portefeuille", "Assurance vie"],
+    "langues": ["Vietnamien", "Français", "Anglais"]
+  }
+]

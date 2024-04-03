@@ -1,0 +1,28 @@
+ville,dettes,prenom,maj,province,revenu_annuel,profession,langue,actif,nom,passif,code_postal,epargne,adresse,id
+Laval,200000,Marie-Josée,2023-10-22,Quebec,220000,Pharmacien,"['Anglais', 'Français']",750000,Deschênes,40000,H7R 1R5,350000,10970 boulevard Sainte-Rose,63905
+Montreal,150000,Hyun,2023-10-22,Quebec,270000,Consultant,"['Français', 'Anglais']",900000,Chung,30000,H3J 1N1,250000,7908 rue Notre-Dame Ouest,63943
+Drummondville,200000,Martin,2023-10-22,Quebec,280000,Consultant,"['Anglais', 'Français']",850000,Léger,30000,J2C 1S5,350000,3404 rue des Mésanges,63987
+Montreal,120000,Chantal,2023-10-22,Quebec,190000,Journaliste,"['Français', 'Anglais']",620000,Ouellet,30000,H3A 3M8,270000,9895 avenue McGill College,63841
+Sainte-Thérèse,100000,Karine,2023-10-22,Quebec,120000,Comptable,"['Anglais', 'Français']",400000,Picard,40000,J7E 1V4,200000,283 rue de la Falaise,63993
+L'Épiphanie,,Jack,2023-10-22,Quebec,300000,Médecin,"['Français', 'Anglais', 'Espagnol']",950000,Hall,,J5X 2P8,,5536 Elmwood Road,64055
+Montreal,80000,Mei,2023-10-22,Quebec,90000,Pharmacien,['Français'],350000,Chen,25000,H2L 2B9,250000,961 rue Sainte-Catherine Est,63921
+Ottawa,50000,Michel,2023-10-22,Ontario,100000,Professeur,['English'],300000,Gauthier,30000,K1A 0A6,150000,3199 rue Wellington,63871
+Boisbriand,100000,Mathieu,2023-10-22,Quebec,170000,Consultante,"['Français', 'Anglais']",600000,Vaillancourt,20000,J7G 4J5,300000,10940 rue des Lilas,63999
+Westmount,200000,Valérie,2023-10-22,Quebec,280000,Conseiller financier,"['Français', 'Anglais']",850000,Bertrand,40000,H3Z 1A2,300000,2166 boulevard de la Montagne,63961
+Boisbriand,120000,Lauren,2023-10-22,Quebec,190000,Agent immobilier,['Français'],620000,Thompson,30000,J7G 1W9,270000,391 Oakridge Road,64037
+Laval,120000,Valérie,2023-10-22,Quebec,190000,Avocat,"['Français', 'Anglais']",620000,Rousseau,30000,H7X 3M2,270000,4029 avenue des Bois,63893
+Terrebonne,150000,Sophia,2023-10-22,Quebec,220000,Pharmacien,"['Anglais', 'Français']",700000,Walker,30000,J6Y 2B9,250000,1334 Maplewood Lane,64053
+Montreal,200000,Ravi,2023-10-22,Quebec,200000,Journaliste,"['Français', 'Anglais']",700000,Kumar,40000,H3A 0G6,300000,9407 avenue McGill College,63945
+Montreal,120000,Chantal,2023-10-22,Quebec,190000,Journaliste,"['Français', 'Anglais']",620000,Ouellet,30000,H3A 3M8,270000,9895 avenue McGill College,63841
+Saint-Jérôme,100000,Isabelle,2023-10-22,Quebec,90000,Enseignante,['Français'],400000,Bérubé,20000,J7Z 1L5,200000,9168 rue de la Baie,63973
+Montreal,100000,Min,2023-10-22,Quebec,90000,Enseignante,"['Français', 'Anglais']",400000,Lee,20000,H3H 2M5,200000,4677 rue Guy,63933
+Montreal,50000,Fatima,2023-10-22,Quebec,80000,Enseignante,"['Français', 'Anglais']",300000,Hassan,10000,H3A 0G1,150000,4966 avenue McGill College,63927
+Trois-Rivieres,100000,Julie,2023-10-22,Quebec,180000,Architecte,['Français'],600000,Girard,20000,G9A 5J1,300000,4480 rue des Ursulines,63865
+Deux-Montagnes,100000,William,2023-10-22,Quebec,120000,Infirmière,"['Français', 'Anglais', 'Italien']",400000,Robinson,30000,J7R 1K5,200000,362 Elmridge Drive,64043
+Terrebonne,100000,Sylvain,2023-10-22,Quebec,180000,Comptable,['Français'],600000,Bolduc,20000,J6Y 2B6,300000,7881 boulevard de la Colline,63975
+Quebec,100000,Émilie,2023-10-22,Quebec,180000,Ingénieure,"['Français', 'Anglais']",600000,Lachance,20000,G1K 8M3,300000,10075 rue du Vieux-Port,63859
+Bois-des-Filion,150000,Matthew,2023-10-22,Quebec,200000,Comptable,"['Français', 'Anglais']",700000,Thomas,30000,J6Z 1C5,250000,8136 Oakwood Drive,64027
+Montreal,180000,Nathalie,2023-10-22,Quebec,260000,Médecin,['Français'],850000,Gauthier,40000,H2Z 1L5,270000,5627 rue Saint-Antoine Ouest,63825
+Boucherville,150000,Michael,2023-10-22,Quebec,260000,Pharmacienne,['Français'],850000,Brown,30000,J4B 1A2,250000,5192 Elm Street,64011
+Montreal,250000,Lee,2023-10-22,Quebec,300000,Consultant,['Français'],900000,Wong,50000,H2X 3W3,400000,9705 rue Saint-Denis,63929
+Repentigny,150000,Alexandre,2023-10-22,Quebec,200000,Infirmière,"['Français', 'Anglais', 'Italien']",700000,Lemelin,40000,J6A 1W3,250000,782 rue du Rivage,63971
