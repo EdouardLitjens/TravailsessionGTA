@@ -179,7 +179,134 @@ df_unique = df_titres.drop_duplicates(subset='symbol').reset_index(drop=True)
 df_unique.index += 1
 
 # Afficher les informations des titres uniques
-print(df_unique)
+#print(df_unique)
 
 #################################################################
 #### Phase 3 : Produire des graphiques d'analyse des données
+
+#Un histogramme du nombre de clients par conseiller financier pour balancer la charge de travail
+# Parcourir les portfolios des clients
+import matplotlib.pyplot as plt
+import warnings
+import dateutil.parser
+
+# Ignorer les avertissements UnknownTimezoneWarning
+warnings.filterwarnings("ignore", category=dateutil.parser.UnknownTimezoneWarning)
+
+# Compter le nombre de clients uniques par conseiller
+clients_par_conseiller = df_client_portfolio_unique.groupby('Adviser ID')['Client ID'].nunique()
+
+# Créer un histogramme
+plt.bar(clients_par_conseiller.index, clients_par_conseiller.values)
+
+# Ajouter des étiquettes et un titre
+plt.xlabel('Conseiller financier')
+plt.ylabel('Nombre de clients uniques')
+plt.title('Nombre de clients uniques par conseiller financier')
+
+# Afficher l'histogramme
+plt.show()
+
+
+# Un histogramme de la valeur totale du portefeuille d'investissement par conseiller financier en date d'aujourd'hui
+# pour évaluer la performance des conseillers financiers.
+#On doit faire un api avec les lien yahoo, je n'ai pas été capable
+
+#Un histogramme comparatif de la valeur totale du portefeuille d'investissement détenu par une femme ou un homme pour
+# chaque conseiller financier en date d'aujourd'hui pour contrôler les biais de genre.
+
+
+#Un histogramme de l'âge des clients pour évaluer la distribution des clients par âge et ajuster les stratégies de marketing.
+# Créer des intervalles pour les tranches d'âge
+bins = [18, 30, 40, 50, 60, 70, 80, 90, 100]
+
+# Regrouper les âges des clients en fonction de ces intervalles
+age_groups = pd.cut(df_clients_sans_doublons['age'], bins=bins, right=False)
+
+# Compter le nombre de clients dans chaque tranche d'âge, en incluant les NaN
+age_counts = age_groups.value_counts(dropna=False)
+
+# Créer un histogramme
+plt.figure(figsize=(10, 6))
+age_counts.plot(kind='bar', color='skyblue')
+plt.title("Répartition des clients par âge")
+plt.xlabel("Tranche d'âge")
+plt.ylabel("Nombre de clients")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+
+
+#Un histogramme du revenu annuel des clients pour évaluer le potentiel de revenu des clients et ajuster les stratégies
+# de marketing.
+
+# Convertir la colonne 'revenu_annuel' en type numérique
+df_clients_sans_doublons.loc[:, 'revenu_annuel'] = pd.to_numeric(df_clients_sans_doublons['revenu_annuel'], errors='coerce')
+
+# Définir les intervalles pour l'histogramme
+bins = list(range(0, 400001, 30000))
+
+# Créer un histogramme
+plt.hist(df_clients_sans_doublons['revenu_annuel'], bins=bins)
+
+# Ajouter des étiquettes et un titre
+plt.xlabel('Revenu Annuel')
+plt.ylabel('Nombre de Clients')
+plt.title('Répartition des Clients par Revenu Annuel')
+
+# Afficher l'histogramme
+plt.show()
+
+
+#Un graphique à points de la valeur actuelle du portefeuille par rapport au revenu des clients pour identifier les clients
+# à fort potentiel de développement et ajuster les stratégies de marketing.
+
+
+
+#Un graphique à pointes de la valeur totale des titres sous gestion par industrie en date d'aujourd'hui en vue de produire
+# des rapports de performance de l'invesstissement et proposer des ajustements de portefeuille.
+
+
+#Un graphique à barres de la valeur totale du portefeuille d'investissement par profession en date d'aujourd'hui pour mieux
+# comprendre les besoins des clients et ajuster les stratégies de placement.
+
+
+
+#Un graphique à pointes du nombre de clients par produit financiers pour évaluer la popularité des produits financiers et
+# ajuster les stratégies de marketing.
+
+# Compter le nombre de clients uniques par produit
+clients_par_produit = df_client_portfolio_unique.groupby('Product Name')['Client ID'].nunique()
+
+# Convertir le résultat en DataFrame pour faciliter la manipulation
+df_clients_par_produit = clients_par_produit.reset_index(name='Nombre de Clients')
+
+# Trier les produits par nombre de clients décroissant
+df_clients_par_produit = df_clients_par_produit.sort_values(by='Nombre de Clients', ascending=False)
+
+# Créer un graphique à points
+plt.figure(figsize=(10, 6))
+plt.plot(df_clients_par_produit['Product Name'], df_clients_par_produit['Nombre de Clients'], marker='o', linestyle='-')
+
+# Ajouter des étiquettes et un titre
+plt.xlabel('Nom du Produit')
+plt.ylabel('Nombre de Clients Uniques')
+plt.title('Nombre de Clients Uniques par Produit')
+
+# Faire pivoter les étiquettes de l'axe des x pour éviter le chevauchement
+plt.xticks(rotation=90)
+
+# Afficher le graphique
+plt.tight_layout()
+plt.show()
+
+
+#Un graphique à pointe montrant les pourcentages de la valeur totale sous gestion par industrie pour évaluer la performance
+# des produits financiers et ajuster les stratégies de placement.
+
+
+
+#Un histogramme des 10 titres les plus populaires selon leur présence dans les produits financiers pour évaluer la
+# popularité des titres et ajuster les stratégies de placement.
+
+
