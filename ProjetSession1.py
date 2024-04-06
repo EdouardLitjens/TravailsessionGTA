@@ -210,7 +210,42 @@ plt.show()
 
 # Un histogramme de la valeur totale du portefeuille d'investissement par conseiller financier en date d'aujourd'hui
 # pour évaluer la performance des conseillers financiers.
-#On doit faire un api avec les lien yahoo, je n'ai pas été capable
+#On doit faire un api avec les lien yahoo
+# Importer la bibliothèque Pandas si ce n'est pas déjà fait
+import yfinance as yf
+from datetime import datetime
+stock_data_today_dict = {}
+
+for symbol in df_unique['symbol']:
+    ticker_symbol = symbol.split("=")[-1]
+    today = datetime.today().strftime('%Y-%m-%d')
+    stock_data_today = yf.download(ticker_symbol, start=today, end=today, interval="1d", group_by="ticker")['Close']
+    stock_data_today_string = stock_data_today.to_string(index=False)
+    stock_data_today_dict[ticker_symbol] = stock_data_today_string.split()[1]
+
+montant_portefeuille_conseiller = { '1A2B': 0, 'F0E1': 0, '3C4D': 0 }
+
+for index, row in df_client_portfolio_unique.iterrows():
+    #montant_portefeuille_conseiller['Adviser ID'] = stock_data_today_dict[row['Title']] * row['Number of Shares']
+    #print(stock_data_today_dict[row['Title']])
+    #print(row['Number of Shares'])
+
+    if stock_data_today_dict[row['Title']] != ")":
+        #print(row['Adviser ID'], " : Title value (", stock_data_today_dict[row['Title']], ") * Number of Shares (",
+              #row['Number of Shares'], ")")
+        montant_portefeuille_conseiller[row['Adviser ID']] += float(stock_data_today_dict[row['Title']]) * row['Number of Shares']
+    #else:
+        #print("Error!")
+
+#print(montant_portefeuille_conseiller)
+
+plt.bar(montant_portefeuille_conseiller.keys(), montant_portefeuille_conseiller.values())
+
+plt.xlabel('Conseiller')
+plt.ylabel('Montant portefeuille')
+plt.title('Histogramme')
+
+plt.show()
 
 #Un histogramme comparatif de la valeur totale du portefeuille d'investissement détenu par une femme ou un homme pour
 # chaque conseiller financier en date d'aujourd'hui pour contrôler les biais de genre.
