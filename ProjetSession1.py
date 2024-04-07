@@ -80,7 +80,7 @@ df_clients_sans_doublons = df_clients.drop_duplicates(subset=['nom', 'prenom', '
 df_clients_sans_doublons.index = range(1, len(df_clients_sans_doublons) + 1)
 
 # Afficher le DataFrame sans doublons
-#print(df_clients_sans_doublons)
+print(df_clients_sans_doublons)
 
 ################
 #Faire une liste avec les informations des conseillers
@@ -219,11 +219,11 @@ stock_data_today_dict = {}
 for symbol in df_unique['symbol']:
     ticker_symbol = symbol.split("=")[-1]
     today = datetime.today().strftime('%Y-%m-%d')
-    stock_data_today = yf.download(ticker_symbol, start=today, end=today, interval="1d", group_by="ticker")['Close']
+    stock_data_today = yf.download(ticker_symbol, start='2024-04-06', end='2024-04-06', interval="1d", group_by="ticker")['Close']
     stock_data_today_string = stock_data_today.to_string(index=False)
     stock_data_today_dict[ticker_symbol] = stock_data_today_string.split()[1]
 
-montant_portefeuille_conseiller = { '1A2B': 0, 'F0E1': 0, '3C4D': 0 }
+montant_portefeuille_conseiller = { '1A2B': 0 , 'F0E1': 0, '3C4D': 0 }
 
 for index, row in df_client_portfolio_unique.iterrows():
     #montant_portefeuille_conseiller['Adviser ID'] = stock_data_today_dict[row['Title']] * row['Number of Shares']
@@ -248,7 +248,46 @@ plt.title('Histogramme')
 plt.show()
 
 #Un histogramme comparatif de la valeur totale du portefeuille d'investissement détenu par une femme ou un homme pour
-# chaque conseiller financier en date d'aujourd'hui pour contrôler les biais de genre.
+#chaque conseiller financier en date d'aujourd'hui pour contrôler les biais de genre.
+#ICI NOUS LE FESONS AVEC UNIQUEMENT LES CLIENTS QU'ON A SUPER IMPORTANT DE LE DIRE DANS LE RAPPORT (ON A PAS LE SEXE DE TOUS LES CLIENTS POUR FAIRE ÇA)
+#ON A PAS NON PLUS LES TITRES PAR CLIENTS
+montant_portefeuille_conseiller_sexe = { '1A2B_Homme': 0,  '1A2B_Femme': 0,  '1A2B_NaN': 0, 'F0E1_Homme': 0, 'F0E1_Femme': 0, 'F0E1_NaN': 0, '3C4D_Homme': 0, '3C4D_Femme': 0, '3C4D_NaN': 0 }
+
+for index, row in df_client_portfolio_unique.iterrows():
+    if stock_data_today_dict[row['Title']] != ")":
+        for index_sexe, row_sexe in df_clients_sans_doublons.iterrows():
+            if row_sexe['id'] == row['Client ID']:
+                #print('ID : ', row_sexe['id'], " : ", row_sexe['gendre'])
+
+                if row_sexe['gendre'] == "Man":
+                    montant_portefeuille_conseiller_sexe[row['Adviser ID'] + '_Homme'] += float(stock_data_today_dict[row['Title']]) * row['Number of Shares']
+                elif row_sexe['gendre'] == "Woman":
+                    montant_portefeuille_conseiller_sexe[row['Adviser ID'] + '_Femme'] += float(stock_data_today_dict[row['Title']]) * row['Number of Shares']
+                else:
+                    montant_portefeuille_conseiller_sexe[row['Adviser ID'] + '_NaN'] += float(stock_data_today_dict[row['Title']]) * row['Number of Shares']
+
+#print(montant_portefeuille_conseiller_sexe)
+
+
+import numpy as np
+
+montant_Homme = np.array([montant_portefeuille_conseiller_sexe['1A2B_Homme'], montant_portefeuille_conseiller_sexe['F0E1_Homme'], montant_portefeuille_conseiller_sexe['3C4D_Homme']])
+montant_Femme = np.array([montant_portefeuille_conseiller_sexe['1A2B_Femme'], montant_portefeuille_conseiller_sexe['F0E1_Femme'], montant_portefeuille_conseiller_sexe['3C4D_Femme']])
+montant_NaN = np.array([montant_portefeuille_conseiller_sexe['1A2B_NaN'], montant_portefeuille_conseiller_sexe['F0E1_NaN'], montant_portefeuille_conseiller_sexe['3C4D_NaN']])
+
+index = np.arange(3)
+width = 0.5
+
+p1 = plt.bar(index, montant_Homme, width, color='#d62728', )
+p2 = plt.bar(index, montant_Femme, width, bottom=montant_Homme)
+p3 = plt.bar(index, montant_NaN, width, bottom=montant_Homme+montant_Femme)
+
+plt.ylabel('Montant')
+plt.title('Montant portefeuille par conseiller par sexe')
+plt.xticks(index, ('1A2B', 'F0E1', '3C4D'))
+plt.legend((p1[0], p2[0], p3[0]), ('Homme', 'Femme', "NaN"))
+
+plt.show()
 
 
 #Un histogramme de l'âge des clients pour évaluer la distribution des clients par âge et ajuster les stratégies de marketing.
@@ -295,7 +334,35 @@ plt.show()
 
 #Un graphique à points de la valeur actuelle du portefeuille par rapport au revenu des clients pour identifier les clients
 # à fort potentiel de développement et ajuster les stratégies de marketing.
+montant_portefeuille_client = {}
 
+for index, row in df_client_portfolio_unique.iterrows():
+    if stock_data_today_dict[row['Title']] != ")":
+        if row['Client ID'] in montant_portefeuille_client:
+            montant_portefeuille_client[row['Client ID']] += float(stock_data_today_dict[row['Title']]) * row['Number of Shares']
+        else:
+            montant_portefeuille_client[row['Client ID']] = float(stock_data_today_dict[row['Title']]) * row['Number of Shares']
+
+revenu_annuel_client = {}
+
+for index_client, row_client in df_clients_sans_doublons.iterrows():
+    revenu_annuel_client[row_client['id']] = row_client['revenu_annuel']
+
+montant_portefeuille_client_converted = {int(key): value for key, value in montant_portefeuille_client.items()}
+revenu_annuel_client_converted = {int(key): value for key, value in revenu_annuel_client.items()}
+
+montant_portefeuille_client_sorted = dict(sorted(montant_portefeuille_client_converted.items(), key=lambda item: item[0]))
+revenu_annuel_client_sorted = dict(sorted(revenu_annuel_client_converted.items(), key=lambda item: item[0]))
+
+print(montant_portefeuille_client_sorted)
+print(revenu_annuel_client_sorted)
+
+plt.figure(figsize=(10, 6))
+plt.plot(list(montant_portefeuille_client_sorted.keys()), list(montant_portefeuille_client_sorted.values()), marker='o', linestyle='-', color='blue')
+plt.plot(list(revenu_annuel_client_sorted.keys()), list(revenu_annuel_client_sorted.values()), marker='o', linestyle='-', color='red')
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.show()
 
 
 #Un graphique à pointes de la valeur totale des titres sous gestion par industrie en date d'aujourd'hui en vue de produire
