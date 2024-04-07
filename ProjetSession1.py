@@ -358,11 +358,15 @@ print(montant_portefeuille_client_sorted)
 print(revenu_annuel_client_sorted)
 
 plt.figure(figsize=(10, 6))
-plt.plot(list(montant_portefeuille_client_sorted.keys()), list(montant_portefeuille_client_sorted.values()), marker='o', linestyle='-', color='blue')
-plt.plot(list(revenu_annuel_client_sorted.keys()), list(revenu_annuel_client_sorted.values()), marker='o', linestyle='-', color='red')
-plt.xticks(rotation=90)
+plt.plot(range(0, len(montant_portefeuille_client_sorted)), list(montant_portefeuille_client_sorted.values()), marker='o', linestyle='-', color='blue')
+plt.plot(range(0, len(revenu_annuel_client_sorted)), list(revenu_annuel_client_sorted.values()), marker='o', linestyle='-', color='red')
+
+plt.xticks(range(0, len(revenu_annuel_client_sorted)), list(montant_portefeuille_client_sorted.keys()))
 plt.tight_layout()
+
 plt.show()
+
+
 
 
 #Un graphique à pointes de la valeur totale des titres sous gestion par industrie en date d'aujourd'hui en vue de produire
