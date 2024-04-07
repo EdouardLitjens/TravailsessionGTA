@@ -366,9 +366,6 @@ plt.tight_layout()
 
 plt.show()
 
-
-
-
 #Un graphique à pointes de la valeur totale des titres sous gestion par industrie en date d'aujourd'hui en vue de produire
 # des rapports de performance de l'invesstissement et proposer des ajustements de portefeuille.
 
