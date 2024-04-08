@@ -219,7 +219,7 @@ stock_data_today_dict = {}
 for symbol in df_unique['symbol']:
     ticker_symbol = symbol.split("=")[-1]
     today = datetime.today().strftime('%Y-%m-%d')
-    stock_data_today = yf.download(ticker_symbol, start='2024-04-06', end='2024-04-06', interval="1d", group_by="ticker")['Close']
+    stock_data_today = yf.download(ticker_symbol, start=today, interval="1d", group_by="ticker")['Close']
     stock_data_today_string = stock_data_today.to_string(index=False)
     stock_data_today_dict[ticker_symbol] = stock_data_today_string.split()[1]
 
