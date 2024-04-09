@@ -407,7 +407,7 @@ for index, row in df_products.iterrows():
 plt.figure(figsize=(12, 8))
 plt.plot(list(valeur_totale_par_industrie.keys()), list(valeur_totale_par_industrie.values()), marker='o',
          linestyle='-')
-plt.title('Valeur totale des titres sous gestion par industrie (2024-04-08)')
+plt.title('Valeur totale des titres sous gestion par industrie (today)')
 plt.xlabel('Industrie')
 plt.ylabel('Valeur totale des titres (USD)')
 plt.xticks(rotation=45, ha='right')
@@ -455,7 +455,7 @@ for index, row in df_client_portfolio_unique.iterrows():
 # Créer un graphique à barres de la valeur totale du portefeuille d'investissement par profession
 plt.figure(figsize=(12, 8))
 plt.bar(valeur_totale_par_profession.keys(), valeur_totale_par_profession.values(), color='skyblue')
-plt.title('Valeur totale du portefeuille d\'investissement par profession (2024-04-08)')
+plt.title('Valeur totale du portefeuille d\'investissement par profession (today)')
 plt.xlabel('Profession')
 plt.ylabel('Valeur totale du portefeuille (USD)')
 plt.xticks(rotation=45, ha='right')
@@ -536,7 +536,7 @@ pourcentages = {industry: (value / total_value) * 100 for industry, value in val
 # Créer un graphique à pointes montrant les pourcentages de la valeur totale sous gestion par industrie
 plt.figure(figsize=(12, 8))
 plt.plot(list(pourcentages.keys()), list(pourcentages.values()), marker='o', linestyle='-')
-plt.title('Pourcentage de la valeur totale sous gestion par industrie (2024-04-08)')
+plt.title('Pourcentage de la valeur totale sous gestion par industrie (today)')
 plt.xlabel('Industrie')
 plt.ylabel('Pourcentage de la valeur totale (%)')
 plt.xticks(rotation=45, ha='right')
