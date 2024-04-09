@@ -30,7 +30,10 @@ Au minimum, les graphiques suivants doivent être produits pour les produits fin
 - Un histogramme des 10 titres les plus populaires selon leur présence dans les produits financiers pour évaluer la popularité des titres et ajuster les stratégies de placement.
 - Défi : Un graphique à ligne sur la valeur des trois titres les plus populaires (voir question précédente) pour chaque mois depuis les 12 derniers mois pour évaluer la performance d'un titre et ajuster les stratégies de placement. (Veuillez synthétiser bien sûr)
 
-## *Démarche*
+
+
+
+## *Démarche/Manipulations* (Justifications des transformations appliquées)
 
 ### Phase 1 : Extraction des données
 import zipfile
@@ -146,6 +149,7 @@ plt.title('Nombre de clients uniques par conseiller financier')
 plt.show()
 
 #### Histogramme de la valeur totale du portefeuille d'investissement par conseiller financier
+
 import yfinance as yf
 from datetime import datetime
 
@@ -174,3 +178,23 @@ plt.show()
 montant_portefeuille_conseiller_sexe = { '1A2B_Homme': 0,  '1A2B_Femme': 0,  '
 
 
+
+## Résultats 
+
+
+
+
+
+
+## Analyse des résultats (Justifications des graphiques produits)
+
+
+## Recommandations (Recommandations pour l'entreprise)
+- Standardisation des formats de données : Définissez des normes claires pour la collecte et le stockage des données afin de garantir leur cohérence et leur compatibilité avec les outils d'analyse. Cela pourrait inclure des formats de fichier standard, des conventions de nommage cohérentes et des structures de données uniformes.
+- Validation des données : Mettez en place des processus de validation des données pour détecter et corriger les erreurs, les incohérences et les valeurs aberrantes dès leur saisie. Cela garantira la qualité des données utilisées dans vos analyses et prises de décision. Mettre surtout l'emphase sur les informations manquantes.
+- Utilisation de solutions technologiques : Explorez l'utilisation de technologies telles que l'intelligence artificielle, l'apprentissage automatique et l'automatisation des processus pour améliorer la collecte, le traitement et l'analyse des données. Ces solutions peuvent aider à accélérer les processus, à réduire les erreurs humaines et à fournir des informations plus précises et exploitables.
+- Formation et sensibilisation du personnel : Sensibilisez votre personnel à l'importance des données de haute qualité et fournissez-leur la formation nécessaire pour collecter, stocker et manipuler efficacement les données. Cela garantira une meilleure utilisation des données dans l'ensemble de l'entreprise et réduira les erreurs liées à la manipulation des données.
+
+
+
+## Conclusion
