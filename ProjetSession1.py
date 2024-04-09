@@ -210,7 +210,7 @@ plt.show()
 
 # Un histogramme de la valeur totale du portefeuille d'investissement par conseiller financier en date d'aujourd'hui
 # pour évaluer la performance des conseillers financiers.
-#On doit faire un api avec les lien yahoo
+# On doit faire un api avec les liens yahoo
 # Importer la bibliothèque Pandas si ce n'est pas déjà fait
 import yfinance as yf
 from datetime import datetime
@@ -219,7 +219,7 @@ stock_data_today_dict = {}
 for symbol in df_unique['symbol']:
     ticker_symbol = symbol.split("=")[-1]
     today = datetime.today().strftime('%Y-%m-%d')
-    stock_data_today = yf.download(ticker_symbol, start='2024-04-06', end='2024-04-06', interval="1d", group_by="ticker")['Close']
+    stock_data_today = yf.download(ticker_symbol, start=today, interval="1d", group_by="ticker")['Close']
     stock_data_today_string = stock_data_today.to_string(index=False)
     stock_data_today_dict[ticker_symbol] = stock_data_today_string.split()[1]
 
@@ -367,13 +367,102 @@ plt.tight_layout()
 plt.show()
 
 #Un graphique à pointes de la valeur totale des titres sous gestion par industrie en date d'aujourd'hui en vue de produire
-# des rapports de performance de l'invesstissement et proposer des ajustements de portefeuille.
+# des rapports de performance de l'investissement et proposer des ajustements de portefeuille.
 
+import yfinance as yf
+import matplotlib.pyplot as plt
+from datetime import datetime
+
+# Définir le dictionnaire pour stocker les données des prix des titres aujourd'hui
+stock_data_today_dict = {}
+
+# Itérer sur les symboles des titres uniques
+for symbol in df_unique['symbol']:
+    # Extraire le symbole ticker
+    ticker_symbol = symbol.split("=")[-1]
+
+    # Récupérer les données du prix de clôture pour aujourd'hui
+    today = datetime.today().strftime('%Y-%m-%d')
+    stock_data_today = yf.download(ticker_symbol, start=today, interval="1d", group_by="ticker")['Close']
+
+    # Stocker les données de prix de clôture pour le symbole ticker
+    stock_data_today_string = stock_data_today.to_string(index=False)
+    stock_data_today_dict[ticker_symbol] = stock_data_today_string.split()[1]
+# Initialiser le dictionnaire pour stocker la valeur totale des titres sous gestion par industrie
+valeur_totale_par_industrie = {}
+
+# Calculer la valeur totale des titres sous gestion par industrie
+for index, row in df_products.iterrows():
+    industry = row['Catégorie']
+
+    if industry not in valeur_totale_par_industrie:
+        valeur_totale_par_industrie[industry] = 0
+    if row['Symbole'] in stock_data_today_dict:
+        stock_price_str = stock_data_today_dict[row['Symbole']]
+        if stock_price_str and stock_price_str != ')':  # Vérifie si la chaîne n'est pas vide et différente de ')'
+            stock_price = float(stock_price_str)
+            valeur_totale_par_industrie[industry] += stock_price * row['Poids réel titre']
+
+# Créer un graphique à points de la valeur totale des titres sous gestion par industrie
+plt.figure(figsize=(12, 8))
+plt.plot(list(valeur_totale_par_industrie.keys()), list(valeur_totale_par_industrie.values()), marker='o',
+         linestyle='-')
+plt.title('Valeur totale des titres sous gestion par industrie (2024-04-08)')
+plt.xlabel('Industrie')
+plt.ylabel('Valeur totale des titres (USD)')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+
+# Afficher le graphique
+plt.show()
 
 #Un graphique à barres de la valeur totale du portefeuille d'investissement par profession en date d'aujourd'hui pour mieux
 # comprendre les besoins des clients et ajuster les stratégies de placement.
 
+import matplotlib.pyplot as plt
+from datetime import datetime
 
+# Définir le dictionnaire pour stocker les données des prix des titres aujourd'hui
+stock_data_today_dict = {}
+
+# Itérer sur les symboles des titres uniques
+for symbol in df_unique['symbol']:
+    # Extraire le symbole ticker
+    ticker_symbol = symbol.split("=")[-1]
+
+    # Récupérer les données du prix de clôture pour aujourd'hui
+    today = datetime.today().strftime('%Y-%m-%d')
+    stock_data_today = yf.download(ticker_symbol, start=today, interval="1d", group_by="ticker")['Close']
+
+    # Stocker les données de prix de clôture pour le symbole ticker
+    stock_data_today_string = stock_data_today.to_string(index=False)
+    stock_data_today_dict[ticker_symbol] = stock_data_today_string.split()[1]
+
+# Initialiser le dictionnaire pour stocker la valeur totale du portefeuille d'investissement par profession
+valeur_totale_par_profession = {}
+
+# Calculer la valeur totale du portefeuille d'investissement par profession
+for index, row in df_client_portfolio_unique.iterrows():
+    profession = row['Title']
+
+    if profession not in valeur_totale_par_profession:
+        valeur_totale_par_profession[profession] = 0
+
+    if row['Title'] in stock_data_today_dict and stock_data_today_dict[row['Title']] != ')':
+        stock_price = float(stock_data_today_dict[row['Title']])
+        valeur_totale_par_profession[profession] += stock_price * row['Number of Shares']
+
+# Créer un graphique à barres de la valeur totale du portefeuille d'investissement par profession
+plt.figure(figsize=(12, 8))
+plt.bar(valeur_totale_par_profession.keys(), valeur_totale_par_profession.values(), color='skyblue')
+plt.title('Valeur totale du portefeuille d\'investissement par profession (2024-04-08)')
+plt.xlabel('Profession')
+plt.ylabel('Valeur totale du portefeuille (USD)')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+
+# Afficher le graphique
+plt.show()
 
 #Un graphique à pointes du nombre de clients par produit financiers pour évaluer la popularité des produits financiers et
 # ajuster les stratégies de marketing.
@@ -407,7 +496,54 @@ plt.show()
 #Un graphique à pointe montrant les pourcentages de la valeur totale sous gestion par industrie pour évaluer la performance
 # des produits financiers et ajuster les stratégies de placement.
 
+import matplotlib.pyplot as plt
+from datetime import datetime
 
+# Définir le dictionnaire pour stocker les données des prix des titres aujourd'hui
+stock_data_today_dict = {}
+
+# Itérer sur les symboles des titres uniques
+for symbol in df_unique['symbol']:
+    # Extraire le symbole ticker
+    ticker_symbol = symbol.split("=")[-1]
+
+    # Récupérer les données du prix de clôture pour aujourd'hui
+    today = datetime.today().strftime('%Y-%m-%d')
+    stock_data_today = yf.download(ticker_symbol, start=today, interval="1d", group_by="ticker")['Close']
+
+    # Stocker les données de prix de clôture pour le symbole ticker
+    stock_data_today_string = stock_data_today.to_string(index=False)
+    stock_data_today_dict[ticker_symbol] = stock_data_today_string.split()[1]
+
+# Initialiser le dictionnaire pour stocker la valeur totale sous gestion par industrie
+valeur_totale_par_industrie = {}
+
+# Calculer la valeur totale sous gestion par industrie
+for index, row in df_products.iterrows():
+    industry = row['Catégorie']
+
+    if industry not in valeur_totale_par_industrie:
+        valeur_totale_par_industrie[industry] = 0
+
+    if row['Symbole'] in stock_data_today_dict and stock_data_today_dict[row['Symbole']] != ')':
+        stock_price = float(stock_data_today_dict[row['Symbole']])
+        valeur_totale_par_industrie[industry] += stock_price * row['Poids réel titre']
+
+# Calculer le pourcentage de la valeur totale sous gestion par industrie
+total_value = sum(valeur_totale_par_industrie.values())
+pourcentages = {industry: (value / total_value) * 100 for industry, value in valeur_totale_par_industrie.items()}
+
+# Créer un graphique à pointes montrant les pourcentages de la valeur totale sous gestion par industrie
+plt.figure(figsize=(12, 8))
+plt.plot(list(pourcentages.keys()), list(pourcentages.values()), marker='o', linestyle='-')
+plt.title('Pourcentage de la valeur totale sous gestion par industrie (2024-04-08)')
+plt.xlabel('Industrie')
+plt.ylabel('Pourcentage de la valeur totale (%)')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+
+# Afficher le graphique
+plt.show()
 
 #Un histogramme des 10 titres les plus populaires selon leur présence dans les produits financiers pour évaluer la
 # popularité des titres et ajuster les stratégies de placement.
