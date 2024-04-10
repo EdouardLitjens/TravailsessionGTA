@@ -180,13 +180,73 @@ montant_portefeuille_conseiller_sexe = { '1A2B_Homme': 0,  '1A2B_Femme': 0,  '
 
 
 ## Résultats 
-
-
-
+- Un histogramme du nombre de clients par conseiller financier pour balancer la charge de travail.
+  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot2.png "Clients par conesillers")
+- Un histogramme de la valeur totale du portefeuille d'investissement par conseiller financier en date d'aujourd'hui pour évaluer la performance des conseillers financiers.
+  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot3.png "Clients par conesillers")
+- Un histogramme comparatif de la valeur totale du portefeuille d'investissement détenu par une femme ou un homme pour chaque conseiller financier en date d'aujourd'hui pour contrôler les biais de genre.
+  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot4.png "Clients par conesillers")
+- Un histogramme de l'âge des clients pour évaluer la distribution des clients par âge et ajuster les stratégies de marketing.
+  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot5.png "Clients par conesillers")
+- Un histogramme du revenu annuel des clients pour évaluer le potentiel de revenu des clients et ajuster les stratégies de marketing.
+  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot6.png "Clients par conesillers")
+- Un graphique à points de la valeur actuelle du portefeuille par rapport au revenu des clients pour identifier les clients à fort potentiel de développement et ajuster les stratégies de marketing.
+  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot7.png "Clients par conesillers")
+- Un graphique à pointes de la valeur totale des titres sous gestion par industrie en date d'aujourd'hui en vue de produire des rapports de performance de l'invesstissement et proposer des ajustements de portefeuille.
+  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot8.png "Clients par conesillers")
+- Un graphique à barres de la valeur totale du portefeuille d'investissement par profession en date d'aujourd'hui pour mieux comprendre les besoins des clients et ajuster les stratégies de placement.
+  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot9.png "Clients par conesillers")
+- Un graphique à pointes du nombre de clients par produit financiers pour évaluer la popularité des produits financiers et ajuster les stratégies de marketing.
+  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot.png "Clients par conesillers")
+- Un graphique à pointe montrant les pourcentages de la valeur totale sous gestion par industrie pour évaluer la performance des produits financiers et ajuster les stratégies de placement.
+  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot1.png "Clients par conesillers")
+- Un histogramme des 10 titres les plus populaires selon leur présence dans les produits financiers pour évaluer la popularité des titres et ajuster les stratégies de placement.
 
 
 
 ## Analyse des résultats (Justifications des graphiques produits)
+- Un histogramme du nombre de clients par conseiller financier pour balancer la charge de travail.
+- 
+Résultats: Ici nous pouvons observer que la répartition des clients entre les employés n'est pas tout a fait équitable. En effet, F0E1 a prêt du double de client que les deux autres conseillers. Cependant, nous pouvons observer que 1A2B et 3C4D on un nombre de client similaire.
+
+- Un histogramme de la valeur totale du portefeuille d'investissement par conseiller financier en date d'aujourd'hui pour évaluer la performance des conseillers financiers.
+
+Résultats: Ici nous pouvons observer qu'encore une fois la répartition des portefeuils est très varrié. Cela peut être du a plusieurs facteurs. En effet, puisqu'il y a des titres que le liens avec Yahoo est pas bon ce qui cause certain titre a être ignorer dans notre code. Cela pourrait expliqué pourquoi la valeur du portefeuil du conseiller 3C4D est aussi faible. Nous pouvons observer 1A2B et F0E1 ont des valeurs de portefeuille similaire ils on une différence d'environ 150 000$. Bref, 3C4D a un différence de quasiment 900 000$ avec les deux autres conseillers. Bref, il y a certainement un problème avec les données de ce conseiller.
+
+- Un histogramme comparatif de la valeur totale du portefeuille d'investissement détenu par une femme ou un homme pour chaque conseiller financier en date d'aujourd'hui pour contrôler les biais de genre.
+
+Résultats: Ici nous pouvons encore observer un problème avec les données fournis. En effet, il manque le sexe pour énormément de client ce qui fait en sorte que cette analyse est désuette. En effet, nous pouvons voir que pour le conseiller 1A2B, nous avons aucun sexe de ses clients. Pour F0E1 nous avons uniquement 20 clients que nous avons le sexe. Pour 3C4D nous avons le sexe d'aucun client. Cela cause problème, car notre analyse n'est pas représentative de l'échantillon. Cependant, si nous nous fillons aux résultats obtenu les hommes ont une plus grosse valeur d'investissement, mais le résultat n'est pas représentatif.
+
+- Un histogramme de l'âge des clients pour évaluer la distribution des clients par âge et ajuster les stratégies de marketing.
+
+Résultats: Ici nous avons un peu le même problème qu'au graphique précédent. Nous manquons beaucoup de donnée d'âge. Nous avons uniquement 20 clients que nous avons l'âge ce qui rend les résultats non représentatif de l'échatillon. Cependant, selon les résultats obtenu nous pouvons constater que la tranche d'âge la plus active au niveau de l'investissement est entre 30 et 40 ans.
+
+- Un histogramme du revenu annuel des clients pour évaluer le potentiel de revenu des clients et ajuster les stratégies de marketing.
+
+Résultats: Ici nous avons enfin des résultats représentatifs de l'échatillon. En effet, nous avions le salaire de tout les clients ce qui nous a permis d'obtenir des résultats de qualité. Dans notre graphique nous pouvons observer que le revenu qui investisse le plus est 200 000$ avec 40 clients dans cette catégorie. La deuxième tranche salariale qui investi le plus est 225 000$. Bref, ceux qui investisse le plus selon les données receuilli sont les salariés qui font 200 000$ par année. Le client le moins fortuné qui a investi a un salaire annuel de 50 000$ et le plus gros salaire est de 325 000$.
+
+- Un graphique à points de la valeur actuelle du portefeuille par rapport au revenu des clients pour identifier les clients à fort potentiel de développement et ajuster les stratégies de marketing.
+
+Résultats: Ici le graphique est très dur a visualisé dû au nombre de donnée différente. En premier lieu la ligne rouge représente le revenu annuel du client et la ligne bleu représente la valeur de leur portefeuil. Puisque nous avons plus d'une centaine de client, l'axe des X est très désagréable a regarder. De plus, il y a beaucoup de point, se qui rend l'analyse très difficile. Se serait pertinent d'avoir un graphique par conseiller qui représente les salaires et portefeuille de ses clients. Comme cela le graphique serait plus simple a lire. Cependant, avec le graphique obtenu, nous pouvons constater qu'il n'y a pas de corrélation entre valeur du portefeuille et salaire annuel. Nous pouvons égallement observer que certain client investisse depuis plus longtemps, car la valeur de leurs portefeuilles est bien supérieur a leur salaire annuel.
+
+- Un graphique à pointes de la valeur totale des titres sous gestion par industrie en date d'aujourd'hui en vue de produire des rapports de performance de l'invesstissement et proposer des ajustements de portefeuille.
+
+Résultats: Ici le graphique est super. Il illustre parfaitement ce qu'il a illustré. Nous pouvons principalement observer que la grande majorité de la valeur des titres est dans le secteur de l'information et des technologies.
+
+- Un graphique à barres de la valeur totale du portefeuille d'investissement par profession en date d'aujourd'hui pour mieux comprendre les besoins des clients et ajuster les stratégies de placement.
+
+????Résultats: Ici nous avons un problème similaire aux résultats du graphique à points de la valeur actuelle du portefeuille par rapport au revenu des clients. En effet, du au grand nombre de client l'axe des X est difficile a observer.
+
+- Un graphique à pointes du nombre de clients par produit financiers pour évaluer la popularité des produits financiers et ajuster les stratégies de marketing.
+ 
+Résultats: Ici le graphique est très claire. Les produits financier les plus populaires sont : Platine agressif, étoile sécuritaire et étoile dynamique. Il serait important de mettre du marketing sur c'est produits en particulier, car ils permettront d'augmenter votre bassin de client avec un produit populaire ce qui diminue les chances que le prospect n'aime pas le produit.
+
+- Un graphique à pointe montrant les pourcentages de la valeur totale sous gestion par industrie pour évaluer la performance des produits financiers et ajuster les stratégies de placement.
+ 
+Résultats: Ici le graphique nous indique que l'industrie de la technologie et de l'information représente plus de 70% de la valeur total du portefeuil sous gestion. Cela implique un gros risque puisque si se secteur vie un période difficile la majorité des clients seront touché. Il est hyper important d'être varié dans ses investissement pour diminuer le risque de perte financière.
+ 
+
+- Un histogramme des 10 titres les plus populaires selon leur présence dans les produits financiers pour évaluer la popularité des titres et ajuster les stratégies de placement.
 
 
 ## Recommandations (Recommandations pour l'entreprise)
