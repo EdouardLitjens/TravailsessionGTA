@@ -258,3 +258,12 @@ Résultats: Ici le graphique nous indique que l'industrie de la technologie et d
 
 
 ## Conclusion
+
+Dans le cadre de ce projet visant à améliorer les stratégies de gestion de portefeuille et à optimiser le suivi de la performance des conseillers financiers pour l'entreprise XYZ, plusieurs étapes ont été franchies, de l'extraction initiale des données à la production de graphiques d'analyse des données.
+
+Malgré les défis rencontrés, tels que la diversité des formats de données et la qualité parfois lacunaire de celles-ci, notre équipe a réussi à extraire, transformer et analyser les données fournies. Cela a permis de produire des visualisations significatives, révélant des insights précieux sur la répartition des clients, la performance des conseillers financiers, et la composition des portefeuilles et produits financiers.
+
+Cependant, notre analyse a également mis en lumière certaines lacunes et défis à relever. Les données manquantes ou incomplètes ont limité la portée de nos analyses, notamment en ce qui concerne la répartition par genre et par âge des clients, ainsi que la corrélation entre la valeur du portefeuille et le revenu annuel. De plus, des anomalies dans les données, comme des valeurs de portefeuille incohérentes, ont nécessité une attention particulière et ont soulevé des questions sur la qualité des données sources.
+
+En conclusion, ce projet a permis d'identifier des pistes d'amélioration pour l'entreprise XYZ, notamment en termes de standardisation des données, de validation de la qualité des données et d'exploration de solutions technologiques plus avancées. En adressant ces recommandations, l'entreprise sera mieux équipée pour tirer pleinement parti de ses données et prendre des décisions plus éclairées dans le domaine de la gestion de portefeuille et des services financiers.
+
