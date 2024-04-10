@@ -549,7 +549,7 @@ plt.show()
 # popularité des titres et ajuster les stratégies de placement.
 
 # Compter le nombre d'occurrences de chaque titre
-popularite_titres = df_client_portfolio_unique['Product Name'].value_counts().head(10)
+popularite_titres = df_client_portfolio_unique['Title'].value_counts().head(10)
 import matplotlib.pyplot as plt
 
 # Créer un histogramme des 10 titres les plus populaires

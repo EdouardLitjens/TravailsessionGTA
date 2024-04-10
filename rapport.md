@@ -201,8 +201,7 @@ montant_portefeuille_conseiller_sexe = { '1A2B_Homme': 0,  '1A2B_Femme': 0,  '
 - Un graphique à pointe montrant les pourcentages de la valeur totale sous gestion par industrie pour évaluer la performance des produits financiers et ajuster les stratégies de placement.
 ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot1.png "Clients par conesillers")
 - Un histogramme des 10 titres les plus populaires selon leur présence dans les produits financiers pour évaluer la popularité des titres et ajuster les stratégies de placement.
-
-
+![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot11.png "Clients par conesillers")
 
 ## Analyse des résultats (Justifications des graphiques produits)
 - Un histogramme du nombre de clients par conseiller financier pour balancer la charge de travail.
@@ -235,7 +234,7 @@ Résultats: Ici le graphique est super. Il illustre parfaitement ce qu'il a illu
 
 - Un graphique à barres de la valeur totale du portefeuille d'investissement par profession en date d'aujourd'hui pour mieux comprendre les besoins des clients et ajuster les stratégies de placement.
 
-????Résultats: Ici nous avons un problème similaire aux résultats du graphique à points de la valeur actuelle du portefeuille par rapport au revenu des clients. En effet, du au grand nombre de client l'axe des X est difficile a observer.
+Résultats: Ici nous avons un problème similaire aux résultats du graphique à points de la valeur actuelle du portefeuille par rapport au revenu des clients. En effet, du au grand nombre de client l'axe des X est difficile a observer.
 
 - Un graphique à pointes du nombre de clients par produit financiers pour évaluer la popularité des produits financiers et ajuster les stratégies de marketing.
  
@@ -244,10 +243,10 @@ Résultats: Ici le graphique est très claire. Les produits financier les plus p
 - Un graphique à pointe montrant les pourcentages de la valeur totale sous gestion par industrie pour évaluer la performance des produits financiers et ajuster les stratégies de placement.
  
 Résultats: Ici le graphique nous indique que l'industrie de la technologie et de l'information représente plus de 70% de la valeur total du portefeuil sous gestion. Cela implique un gros risque puisque si se secteur vie un période difficile la majorité des clients seront touché. Il est hyper important d'être varié dans ses investissement pour diminuer le risque de perte financière.
- 
 
 - Un histogramme des 10 titres les plus populaires selon leur présence dans les produits financiers pour évaluer la popularité des titres et ajuster les stratégies de placement.
 
+Résultats: Ici le graphique est très pertinent. En effet, il illustre les 10 titres les plus populaires auprès des clients. Il y a un tout petit problème avec la prise de donnée, car certain nom de titre n'est pas le même dans les données que sur Yahoo finance. Bref, ce graphique démontre que les titres les plus populaire sont T.TO, FTS.TO, CHP.UN.TO, USD.TO, CSU.TO, TLRY.TO, AIF.TO, CAD.TO, KXS.TO, CSH.UN.TO.  
 
 ## Recommandations (Recommandations pour l'entreprise)
 - Standardisation des formats de données : Définissez des normes claires pour la collecte et le stockage des données afin de garantir leur cohérence et leur compatibilité avec les outils d'analyse. Cela pourrait inclure des formats de fichier standard, des conventions de nommage cohérentes et des structures de données uniformes.
