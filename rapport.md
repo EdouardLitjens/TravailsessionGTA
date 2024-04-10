@@ -181,25 +181,25 @@ montant_portefeuille_conseiller_sexe = { '1A2B_Homme': 0,  '1A2B_Femme': 0,  '
 
 ## Résultats 
 - Un histogramme du nombre de clients par conseiller financier pour balancer la charge de travail.
-  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot2.png "Clients par conesillers")
+![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot2.png "Clients par conesillers")
 - Un histogramme de la valeur totale du portefeuille d'investissement par conseiller financier en date d'aujourd'hui pour évaluer la performance des conseillers financiers.
-  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot3.png "Clients par conesillers")
+![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot3.png "Clients par conesillers")
 - Un histogramme comparatif de la valeur totale du portefeuille d'investissement détenu par une femme ou un homme pour chaque conseiller financier en date d'aujourd'hui pour contrôler les biais de genre.
-  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot4.png "Clients par conesillers")
+![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot4.png "Clients par conesillers")
 - Un histogramme de l'âge des clients pour évaluer la distribution des clients par âge et ajuster les stratégies de marketing.
-  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot5.png "Clients par conesillers")
+![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot5.png "Clients par conesillers")
 - Un histogramme du revenu annuel des clients pour évaluer le potentiel de revenu des clients et ajuster les stratégies de marketing.
-  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot6.png "Clients par conesillers")
+![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot6.png "Clients par conesillers")
 - Un graphique à points de la valeur actuelle du portefeuille par rapport au revenu des clients pour identifier les clients à fort potentiel de développement et ajuster les stratégies de marketing.
-  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot7.png "Clients par conesillers")
+![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot7.png "Clients par conesillers")
 - Un graphique à pointes de la valeur totale des titres sous gestion par industrie en date d'aujourd'hui en vue de produire des rapports de performance de l'invesstissement et proposer des ajustements de portefeuille.
-  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot8.png "Clients par conesillers")
+![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot8.png "Clients par conesillers")
 - Un graphique à barres de la valeur totale du portefeuille d'investissement par profession en date d'aujourd'hui pour mieux comprendre les besoins des clients et ajuster les stratégies de placement.
-  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot9.png "Clients par conesillers")
+![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot9.png "Clients par conesillers")
 - Un graphique à pointes du nombre de clients par produit financiers pour évaluer la popularité des produits financiers et ajuster les stratégies de marketing.
-  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot.png "Clients par conesillers")
+![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot.png "Clients par conesillers")
 - Un graphique à pointe montrant les pourcentages de la valeur totale sous gestion par industrie pour évaluer la performance des produits financiers et ajuster les stratégies de placement.
-  ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot1.png "Clients par conesillers")
+![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot1.png "Clients par conesillers")
 - Un histogramme des 10 titres les plus populaires selon leur présence dans les produits financiers pour évaluer la popularité des titres et ajuster les stratégies de placement.
 
 
