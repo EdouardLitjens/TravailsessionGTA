@@ -1,6 +1,7 @@
 ## *Contexte*
 L'entreprise XYZ est une société de services financiers cherchant à améliorer ses stratégies de gestion de portefeuille et à optimiser le suivi de la performance de ses conseillers financiers. Dans le cadre du cours GTA431, nous devons effectuer ce travail qui consiste à extraire, transformer et exploiter les données financières. Pour ce faire, nous utiliserons le langage de code Python.
 
+
 ## *Objectifs*
 
 ### Extraction des données*
@@ -31,9 +32,7 @@ Au minimum, les graphiques suivants doivent être produits pour les produits fin
 - Défi : Un graphique à ligne sur la valeur des trois titres les plus populaires (voir question précédente) pour chaque mois depuis les 12 derniers mois pour évaluer la performance d'un titre et ajuster les stratégies de placement. (Veuillez synthétiser bien sûr)
 
 
-
-
-## *Démarche/Manipulations* (Justifications des transformations appliquées)
+## *Démarche/Manipulations* 
 
 ### Phase 1 : Extraction des données
 import zipfile
@@ -203,7 +202,8 @@ montant_portefeuille_conseiller_sexe = { '1A2B_Homme': 0,  '1A2B_Femme': 0,  '
 - Un histogramme des 10 titres les plus populaires selon leur présence dans les produits financiers pour évaluer la popularité des titres et ajuster les stratégies de placement.
 ![Texte alternatif](C:\Users\msnla\TravailsessionGTA5\Photo\myplot11.png "Clients par conesillers")
 
-## Analyse des résultats (Justifications des graphiques produits)
+
+## Analyse des résultats 
 - Un histogramme du nombre de clients par conseiller financier pour balancer la charge de travail.
 - 
 Résultats: Ici nous pouvons observer que la répartition des clients entre les employés n'est pas tout a fait équitable. En effet, F0E1 a prêt du double de client que les deux autres conseillers. Cependant, nous pouvons observer que 1A2B et 3C4D on un nombre de client similaire.
@@ -248,12 +248,13 @@ Résultats: Ici le graphique nous indique que l'industrie de la technologie et d
 
 Résultats: Ici le graphique est très pertinent. En effet, il illustre les 10 titres les plus populaires auprès des clients. Il y a un tout petit problème avec la prise de donnée, car certain nom de titre n'est pas le même dans les données que sur Yahoo finance. Bref, ce graphique démontre que les titres les plus populaire sont T.TO, FTS.TO, CHP.UN.TO, USD.TO, CSU.TO, TLRY.TO, AIF.TO, CAD.TO, KXS.TO, CSH.UN.TO.  
 
-## Recommandations (Recommandations pour l'entreprise)
-- Standardisation des formats de données : Définissez des normes claires pour la collecte et le stockage des données afin de garantir leur cohérence et leur compatibilité avec les outils d'analyse. Cela pourrait inclure des formats de fichier standard, des conventions de nommage cohérentes et des structures de données uniformes.
+
+## Recommandations 
+- Standardisation des formats de données : Définissez des normes claires pour la collecte et le stockage des données afin de garantir leur cohérence et leur compatibilité avec les outils d'analyse. Cela pourrait inclure des formats de fichier standard, des conventions de nommage cohérentes et des structures de données uniformes. Il serait pertienent de choisir entre JSON ou CSV cela simplifiera le code.
 - Validation des données : Mettez en place des processus de validation des données pour détecter et corriger les erreurs, les incohérences et les valeurs aberrantes dès leur saisie. Cela garantira la qualité des données utilisées dans vos analyses et prises de décision. Mettre surtout l'emphase sur les informations manquantes.
 - Utilisation de solutions technologiques : Explorez l'utilisation de technologies telles que l'intelligence artificielle, l'apprentissage automatique et l'automatisation des processus pour améliorer la collecte, le traitement et l'analyse des données. Ces solutions peuvent aider à accélérer les processus, à réduire les erreurs humaines et à fournir des informations plus précises et exploitables.
 - Formation et sensibilisation du personnel : Sensibilisez votre personnel à l'importance des données de haute qualité et fournissez-leur la formation nécessaire pour collecter, stocker et manipuler efficacement les données. Cela garantira une meilleure utilisation des données dans l'ensemble de l'entreprise et réduira les erreurs liées à la manipulation des données.
-
+- Centralisation de la saisie des données : Affectez un employé dédié à la saisie et à la gestion des données, chargé de collecter, vérifier et entrer les informations dans les systèmes de manière uniforme. En centralisant ce processus, vous réduirez les risques d'erreurs et assurerez une cohérence et une qualité accrues des données. De plus, cela permettra d'avoir une personne responsable de maintenir les normes de qualité des données et de répondre aux besoins spécifiques de collecte d'informations.
 
 
 ## Conclusion
