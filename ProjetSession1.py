@@ -548,4 +548,18 @@ plt.show()
 #Un histogramme des 10 titres les plus populaires selon leur présence dans les produits financiers pour évaluer la
 # popularité des titres et ajuster les stratégies de placement.
 
+# Compter le nombre d'occurrences de chaque titre
+popularite_titres = df_client_portfolio_unique['Product Name'].value_counts().head(10)
+import matplotlib.pyplot as plt
+
+# Créer un histogramme des 10 titres les plus populaires
+plt.figure(figsize=(10, 6))
+popularite_titres.plot(kind='bar', color='skyblue')
+plt.title('Popularité des 10 titres les plus courants dans les produits financiers')
+plt.xlabel('Titre')
+plt.ylabel('Nombre d\'occurrences')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+
 
